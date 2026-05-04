@@ -1,0 +1,20 @@
+body.dark {
+  background: #0B0B0F;
+  color: white;
+}
+
+.section {
+  background: white;
+}
+
+body.dark .section {
+  background: #111827;
+}
+
+.card {
+  background: white;
+}
+
+body.dark .card {
+  background: #1F2937;
+}
