@@ -272,7 +272,7 @@ const MainPage = () => {
         {/* Skills Section */}
         <div id='skills' className='flex flex-col lg:flex-row bg-white m-14 shadow-2xl rounded-lg'>
           {/* Left Column: Skill Cards */}
-          <div className='flex-1 p-5'>
+          <div className='flex-1 '>
             <div className='mb-8 font-bold text-3xl text-purple-900'>Technical Skills</div>
             <div className='grid gap-10'>
               {card1.map((card, index) => (
@@ -286,7 +286,7 @@ const MainPage = () => {
                       {card.skills.map((skill, i) => (
                         <div key={i} className='flex items-center gap-2  text-purple-900 text-3xl'>
                           <span className='w-2 h-2 bg-violet-900 rounded-full  '></span>
-                          <span className='font-sans' >{skill}</span>
+                          <span className='font-sans bg-purple-400 text-white   rounded-full p-2 hover:bg-purple-300' >{skill}</span>
                         </div>
                       ))}
                     </div>
@@ -311,7 +311,7 @@ const MainPage = () => {
           <div className='flex justify-between items-center mb-10'>
             <div className='text-4xl font-bold'>Some Things I've Built</div>
             <Link  onClick={() => window.scrollTo(0, 0)} to="/ViewProject"  className="text-purple-700 font-semibold text-xl hover:underline flex items-center gap-1">
-              View all projects →
+              View all projects &rarr;
             </Link>
           </div>
 
