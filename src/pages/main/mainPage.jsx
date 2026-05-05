@@ -272,7 +272,7 @@ const MainPage = () => {
         {/* Skills Section */}
         <div id='skills' className='flex flex-col lg:flex-row bg-white m-14 shadow-2xl rounded-lg'>
           {/* Left Column: Skill Cards */}
-          <div className='flex-1 '>
+          <div className='flex-1 m-6'>
             <div className='mb-8 font-bold text-3xl text-purple-900'>Technical Skills</div>
             <div className='grid gap-10'>
               {card1.map((card, index) => (
