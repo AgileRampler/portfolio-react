@@ -172,13 +172,13 @@ const MainPage = () => {
    
 
       <div className='bg-[#F5F5FA]'>
-
+ 
       <NavBar />
         {/* Hero Section */}
-        <div id="home" className='h-[30%] bg-white mx-14 rounded-lg shadow-xl relative overflow-hidden flex items-center'>
+        <div id="home" className='h-[30%] bg-white mx-14  rounded-lg shadow-xl relative overflow-hidden flex items-center'>
 
           {/* Left — Text */}
-          <div className="flex flex-col gap-4 p-40 w-[55%] z-10 relative">
+          <div className="flex flex-col gap-4  p-40 w-[55%] z-10 relative">
             <p className="text-gray-500 text-lg">Hi, I'm</p>
             <h1 className="text-6xl font-bold text-violet-600">
               Govind <span>👋</span>
@@ -310,7 +310,7 @@ const MainPage = () => {
           <div className='text-purple-800 font-bold text-2xl mb-4'>FEATURED PROJECT</div>
           <div className='flex justify-between items-center mb-10'>
             <div className='text-4xl font-bold'>Some Things I've Built</div>
-            <Link to="ViewProject"  className="text-purple-700 font-semibold text-xl hover:underline flex items-center gap-1">
+            <Link  onClick={() => window.scrollTo(0, 0)} to="/ViewProject"  className="text-purple-700 font-semibold text-xl hover:underline flex items-center gap-1">
               View all projects →
             </Link>
           </div>
