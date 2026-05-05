@@ -175,7 +175,7 @@ const MainPage = () => {
  
       <NavBar />
         {/* Hero Section */}
-        <div id="home" className='h-[30%] bg-white mx-14  rounded-lg shadow-xl relative overflow-hidden flex items-center'>
+        <div id="home" className='h-[30%] bg-white mx-14 mt rounded-lg shadow-xl relative overflow-hidden flex items-center'>
 
           {/* Left — Text */}
           <div className="flex flex-col gap-4  p-40 w-[55%] z-10 relative">
