@@ -52,7 +52,7 @@ const NavBar = () => {
             <a
               href="/Govind_Resume.pdf"
               download
-              className="bg-[#5B3DF5] text-white h-12 w-36 rounded-lg flex justify-center items-center hover:bg-violet-700 transition duration-300"
+              className="bg-violet-700 text-white h-12 w-36 rounded-lg flex justify-center items-center hover:bg-[#5B3DF5] transition duration-300"
             >
               Download CV
             </a>

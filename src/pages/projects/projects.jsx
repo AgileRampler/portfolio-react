@@ -7,6 +7,9 @@ import uiux1 from '../../assets/Projects/uiux1.png'
 import uiux2 from '../../assets/Projects/uiux2.png'
 import uiux3 from '../../assets/Projects/uiux3.png'
 import uiux4 from '../../assets/Projects/uiux4.png'
+import weatherapp from '../../assets/Projects/weatherapp.png'
+import libraryproject from '../../assets/Projects/libraryproject.png'
+import todolist from '../../assets/Projects/todolist.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'  
 import { faUser } from '@fortawesome/free-solid-svg-icons' 
@@ -28,41 +31,77 @@ const [selected, setSelected] = useState("All")
         title:"Portfolio Website",
         desc :"Personal Portfolio Website Built with react and tailwind to showcase my works and skills",
         tags :["React","TailWindcss"],
-        github:"",
-        link:""
+        github:"https://github.com/AgileRampler/portfolio-react",
+        link:"https://govindportfolio1.netlify.app"
     },
      {
         image:avalonMapper,
         title:"Avalon Mapper",
         desc :"A tool used to find the avalon maps in albion online",
         tags :["React","TailWindcss"],
-        github:"",
-        link:""
+             github:"https://github.com/AgileRampler/react-weather",
+          link:"https://agile-weather.netlify.app"
     },
      {
         image:uiux1,
         title:"Coffee Website",
         desc :"Website Deisn made to learn how grids works in css ",
         tags :["HTML","CSS","ui/ux"],
-        github:"",
-        link:""
+        github:"https://github.com/AgileRampler/Grid_coffee",
+        link:"https://agile-coffee.netlify.app"
     },
+    {
+          image:uiux2,
+          title:"E-commerce Website",
+          desc :"A simple design of clothing style e-commerce website",
+          tags :["HTML","CSS",""],
+          github:"https://github.com/AgileRampler/E-commerce-website",
+          link:"https://vougue-shopify.netlify.app/"
+      },
+      
+      
       {
           image:uiux3,
         title:"Rolex Website",
         desc :"An Ecommerce Website overview of rolex watch collection ",
         tags :["HTML","CSS","ui/ux"],
-        github:"",
-        link:""
+         github:"https://github.com/AgileRampler/Responsive",
+          link:"https://rolex-agile.netlify.app/"
     },
       {
         image:uiux4,
         title:"FlowBite Website",
         desc :"Website design made to learn flowbite using standard html ",
         tags :["flowbite","ui/ux"],
-        github:"",
-        link:""
+        github:"https://github.com/AgileRampler/clipboard_flowbit",
+        link:"https://app.netlify.com/projects/flowbita-agile/"
     },
+        {
+              image:todolist,
+              title:"Responsove To-Do-List",
+              desc :"Mobile Freindly To-do list app to learn CRUD opeartion ",
+              tags :["React","TailWind"],
+              github:"https://github.com/AgileRampler/React-To-Do-List",
+              link:"https://checklistv1.netlify.app/"
+          },
+             {
+          image:weatherapp,
+          title:"Mini Weather App",
+          desc :"A mini weatherapp made to obtain quick weather data",
+          tags :["React","TailWindcss","API"],
+          github:"https://github.com/AgileRampler/react-weather",
+          link:"agile-weather.netlify.app"
+      },
+      {
+          image:libraryproject,
+          title:"The Book Library",
+          desc :"Odin Project of book library ",
+          tags :["HTML","CSS","JavaScript"],
+          github:"https://github.com/AgileRampler/odin_project_library",
+          link:"https://agile-odin-library.netlify.app/"
+      },
+      
+      
     
  ]
 

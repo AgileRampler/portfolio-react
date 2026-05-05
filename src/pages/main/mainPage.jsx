@@ -1,6 +1,19 @@
 import React from 'react'
 import NavBar from '../../components/navBar/navBar'
 import { Link } from 'react-router-dom';
+import  portfolioProject from '../../assets/Projects/Porfolioproject.png'
+import avalonMapper from '../../assets/Projects/Avalonmapper.png'
+import uiux1 from '../../assets/Projects/uiux1.png'
+import uiux2 from '../../assets/Projects/uiux2.png'
+import uiux3 from '../../assets/Projects/uiux3.png'
+import uiux4 from '../../assets/Projects/uiux4.png'
+import weatherapp from '../../assets/Projects/weatherapp.png'
+import todolist from '../../assets/Projects/todolist.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'  
+import { faUser } from '@fortawesome/free-solid-svg-icons' 
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -24,6 +37,7 @@ ChartJS.register(
 
 
 import Robot from "../../components/robot/robot"
+import projects from '../projects/projects';
 
 const MainPage = () => {
 
@@ -49,6 +63,43 @@ const MainPage = () => {
       icon: <i className="fa-solid fa-briefcase" style={{ color: "rgb(116, 192, 252)" }}></i>
     }
   ];
+
+  const Projects = [
+      {
+          image:weatherapp,
+          title:"Mini Weather App",
+          desc :"A mini weatherapp made to obtain quick weather data",
+          tags :["React","TailWindcss","API"],
+          github:"https://github.com/AgileRampler/react-weather",
+          link:"https://agile-weather.netlify.app"
+      },
+       {
+          image:avalonMapper,
+          title:"Avalon Mapper",
+          desc :"A tool used to find the avalon maps in albion online",
+          tags :["React","TailWindcss"],
+          github:"https://github.com/AgileRampler/AlbionIntel",
+          link:"https://albionintel.netlify.app"
+      },
+       {
+          image:todolist,
+          title:"Responsove To-Do-List",
+          desc :"Mobile Freindly To-do list app to learn CRUD opeartion ",
+          tags :["React","TailWind"],
+          github:"https://github.com/AgileRampler/React-To-Do-List",
+          link:"https://checklistv1.netlify.app/"
+      },
+        {
+            image:uiux3,
+          title:"Rolex Website",
+          desc :"An Ecommerce responsive website overview of rolex watch collection ",
+          tags :["HTML","CSS","ui/ux"],
+          github:"https://github.com/AgileRampler/Responsive",
+          link:"https://rolex-agile.netlify.app/"
+      },
+
+      
+   ]
 
   const timeline = [
     {
@@ -124,36 +175,7 @@ const MainPage = () => {
     }
   };
 
-  const Projects = [
-    {
-      title: "Website Designs",
-      desc: "Full live front-end design of all the website i have made",
-      tags: "",
-      github: "#",
-      link: "#"
-    },
-    {
-      title: "Avalon Map Checker",
-      desc: "Full live front-end design of all the website i have made",
-      tags: "MERN",
-      github: "#",
-      link: "#"
-    },
-    {
-      title: "Siphon Calculator",
-      desc: "Full live front-end design of all the website i have made",
-      tags: "MERN",
-      github: "#",
-      link: "#"
-    },
-    {
-      title: "Bus-Ticket-Booking",
-      desc: "Full live front-end design of all the website i have made",
-      tags: "MERN",
-      github: "#",
-      link: "#"
-    }
-  ];
+
 
   const MockUI = () => (
     <div className="absolute inset-0 flex items-center justify-center">
@@ -315,22 +337,36 @@ const MainPage = () => {
             </Link>
           </div>
 
-          <div className='m-10 grid gap-20 grid-cols-4'>
-            {Projects.map((project, i) => (
-              <div key={i} className='border border-gray-200 rounded-4xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-200 cursor-pointer bg-white'>
-                <div className="relative h-40 bg-linear-to-r from-purple-500 to-purple-700">
-                  <MockUI />
-                </div>
-                <div className='m-4 font-bold text-xl'>{project.title}</div>
-                <div className='m-4 text-gray-700 font-semibold'>{project.desc}</div>
-                <div className="m-5 text-sm flex justify-evenly text-purple-600 font-semibold">
-                  {project.tags}
-                  <a href={project.github} className="text-purple-700 font-medium hover:underline">GitHub</a>
-                  <a href={project.link} className="text-purple-700 font-medium hover:underline">Live Demo</a>
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className='  grid grid-cols-4 gap-6  '>
+                         {
+                            Projects.map((data,i)=>(
+                                 <div key={i} className='bg-[#F5F5FA]  rounded-2xl m-4 shadow-md hover-shadow-xl transition duration-300 group '>
+                                <img className=' h-50 rounded-2xl w-full  object-cover  group-hover:scale-105 transition' src={data.image}/>
+                              <div className='p-4'>
+                                    <div className=' mb-1 font-bold'>{data.title} </div>
+                                    <div className='mb-3 text-xs'>{data.desc}</div>
+                              </div>
+
+                                <div className='flex  flex-wrap' >
+                                    {data.tags.map((tags,j)=>(
+                                            <div key={j} className='  text-purple-950 text-xs bg-purple-200 rounded-full px-3 py-1 p-2  flex  flex-wrap m-2 '>{tags} </div>
+                                    ))} 
+
+                                   <div className='flex ms-12 gap-4 cursor-pointer'>
+                                     <a href={data.github} target='_blank' ><FontAwesomeIcon icon={faGithub} size="2x" style={{ color: "rgb(177, 151, 252)" }} /></a>
+                                  <a href={data.link} target='_blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} size='2x' style={{color: "rgb(177, 151, 252)",}} /></a>
+
+        
+
+                                   </div>
+                                </div>
+                            
+                          
+                            </div>
+                            
+                            ))
+                         }
+                        </div>
         </div>
 
         {/* Contact Section */}
@@ -354,7 +390,7 @@ const MainPage = () => {
               Location
               <div className='font-light'>India, Kerala</div>
             </div>
-            <button className='bg-purple-800 hover:bg-purple-600 hover:shadow-2xl hover:-translate-y-1  text-white rounded p-4 m-2'>
+            <button className='bg-purple-800 hover:bg-[#5B3DF5] transition-colors duration-300 hover:shadow-2xl   text-white rounded p-4 m-2'>
               <a href='https://wa.me/918075286582' target='_blank' rel="noreferrer">Send Message</a> →
             </button>
           </div>
