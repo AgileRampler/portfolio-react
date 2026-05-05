@@ -19,10 +19,10 @@ const NavBar = () => {
   return ( 
 
 
-      <div className='bg-[#F5F5FA]'>
+      <div className='bg-[#F5F5FA] fixed top-0 z-50 w-full'>
 
         {/* NavBar */}
-        <div className="fixed top-0 z-50 w-full">
+        <div className="">
           <div className="flex bg-white h-20 mx-14 my-4 px-6 rounded-lg justify-between items-center shadow-md">
 
             {/* Logo */}
