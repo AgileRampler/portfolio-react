@@ -46,7 +46,7 @@ const [selected, setSelected] = useState("All")
        {
           image:EMC,
           title:"Employee Management System",
-          desc :"MERN project of full employee management system with landging page and full page",
+          desc :"MERN project of full employee management system with landging page with all CRUD opearion and JWT authentication features",
           tags :["MERN","JWT","API"],
           github:"https://github.com/AgileRampler/EMC",
           link:"https://cheery-mooncake-ab72ec.netlify.app//"
