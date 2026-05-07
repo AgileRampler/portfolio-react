@@ -10,6 +10,7 @@ import uiux4 from '../../assets/Projects/uiux4.png'
 import weatherapp from '../../assets/Projects/weatherapp.png'
 import libraryproject from '../../assets/Projects/libraryproject.png'
 import todolist from '../../assets/Projects/todolist.png'
+import EMC from '../../assets/Projects/EMC.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'  
 import { faUser } from '@fortawesome/free-solid-svg-icons' 
@@ -42,6 +43,14 @@ const [selected, setSelected] = useState("All")
              github:"https://github.com/AgileRampler/react-weather",
           link:"https://agile-weather.netlify.app"
     },
+       {
+          image:EMC,
+          title:"Employee Management System",
+          desc :"MERN project of full employee management system with landging page and full page",
+          tags :["MERN","JWT","API"],
+          github:"https://github.com/AgileRampler/EMC",
+          link:"https://cheery-mooncake-ab72ec.netlify.app//"
+      },
      {
         image:uiux1,
         title:"Coffee Website",
